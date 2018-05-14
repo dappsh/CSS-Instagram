@@ -4,140 +4,9 @@
 <head>
     <!-- untuk judul di tab pada browser -->
     <title>Instagram Profile Tugas</title>
+    <link rel="stylesheet" type="text/css" href="Dwi-Ajeng-JC5-TugasInstagramProfile.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Grand+Hotel" rel="stylesheet">
-
-    <style>
-        body {
-            font-family: 'Segoe UI';            /* font yang digunakan */
-            font-size: 26px;                    /* ukuran font */
-            color: black;                     /* warna font */
-            margin: 0;                          /* nol margin agar tidak ada gap antara body dan isinya */
-        }
-
-
-        main {
-            background-color: #fafafa;         /* background untuk content / main */
-            margin-top: 10px;
-            /* padding: 60px 290px 0px 290px; */
-        }
-        
-        
-        /* styling  agian header*/
-        header {
-            background-color: #FFFFFF;
-            align-items: center;                 /* membuat posisi elemen di tengah  */
-            display: grid;                       /* display grid aja ga ada penjelasannya */
-            grid-template-columns: 1fr 1fr 1fr;  /* membuat border untuk batas header dan main  */
-            /* border-bottom: 1px solid #dbdbdb; */
-            max-width: 975px;                    /* membuat 3 line dengan 1 line + 1 line + 1 line */
-            width: 100%;                         /* membuat pembatas / limit widhth*/
-            margin: 0 auto;                      /* dengan margin 0 auto, posisi akan berada ditengah body */
-        }
-  
-        /* tulisan instagram bagian kiri atas */
-        .Instagram {
-            font-family: 'Grand Hotel';
-            font-size: 36px;
-        }
-        /* styling placeholder */
-       ::-webkit-input-placeholder{
-           text-align: center;
-           color: #8d8d8d;
-           font-weight: 100;
-       }
-
-       /* styling search engine */
-        .search {
-            border: solid 1px #dbdbdb;
-            background-color: #fafafa;
-            border-radius: 3px;
-            line-height: 26px;
-            width: 220px;
-       }
-
-       /* styling img pada class icon bagian kanan atas */
-         .icon img {
-            width: 40px;
-            align-items: center
-        }
-        
-        .profile {
-            padding: 60px;
-            padding-bottom: 0px;
-            display: grid;
-            grid-template-columns: 1fr 2fr;
-            grid-auto-rows: minmax(200px, 200px);
-            max-width: 975px;
-            margin: 0 auto;
-        }
-        
-        .fotoProfile {
-            border-radius: 50%;
-            width: 152px;
-            margin: 0 auto;
-        }
-
-        .profile ul{
-            padding-left: 10px;
-        }
-        
-        .userName {
-            font-size: 32px;
-            font-weight: 200;
-        }
-
-        .fontButton{
-            font-size: 14px;
-            font-weight: 600;
-        }
-
-        button {
-            background: 0;
-            border: 1px solid #dbdbdd;
-            border-radius: 3px;
-            line-height: 30px;
-            color: #262626;
-            /* display: inline-block; */
-            padding: 0px 24px;
-        }
-        
-        .picture {
-            width: 293px;
-            height: 293px;
-            object-fit: cover;
-
-        }
-
-        #content {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-auto-rows: minmax(293px, 293px);
-            grid-column-gap: 30px;
-            grid-row-gap: 30px;
-            max-width: 975px;
-            margin: 0 auto;
-
-        }
-
-
-      
-
-        ul {
-            list-style: none;
-            padding: 0;
-            /*untuk menghilangkan jarak tab list*/
-            margin: 0;
-            /*untuk menghilangkan jarak tab list*/
-        }
-
-        li {
-            display: inline; 
-            margin-right: 25px;
-            font-size: 16px;
-
-        }
-    </style>
 
 </head>
 
@@ -157,7 +26,7 @@
             <div>
                 <ul style="padding: 0px 80px 0px 80px">
                     <li>
-                        <input type="text" class="search" placeholder="&#xF002; Search" style="font-family:'Segoe UI', FontAwesome">
+                        <input type="text" class="search" style="font-family:'Segoe UI', FontAwesome;" placeholder="&#xF002; Search" >
                     </li>
                 </ul>
             </div>
@@ -186,7 +55,7 @@
         <!-- bagian biodata isinya photo profile, username dan info follow -->
         <div class="profile">
             <!-- grid pertama (1fr); photo profile -->
-            <img class="fotoProfile" src="https://scontent-sit4-1.cdninstagram.com/vp/e7de93e1f062522accdf218e9df10f13/5B871CBB/t51.2885-19/s150x150/29737371_1168273209976438_6690563671317282816_n.jpg">
+            <img class="fotoProfile" src="https://pbs.twimg.com/media/DaJ6KuyVQAAQbGP?format=jpg&name=small">
             
             <!-- grid ke dua (2fr); username dan biodata -->
             <div>
@@ -195,13 +64,13 @@
                     <li><span class="userName">dappsh</span>
                     </li>
 
-                    <li><span style="position: absolute; padding: 7px"><button class="fontButton"><span style="font-family: 'Tahoma'">Edit Profile</span></button>&emsp;<img src="https://cdn3.iconfinder.com/data/icons/fez/512/FEZ-04-128.png" width="20px"></span></li>
+                    <li><span style="position: absolute; padding: 7px"><button class="fontButton">Edit Profile</button>&emsp;<span style="position: absolute; padding-top: 1px" ><img src="https://cdn3.iconfinder.com/data/icons/fez/512/FEZ-04-128.png" width="28px"></span></span></li>
                 </ul>
                 
                 <!--  unordered list yang berisi list item; 1.jumlah post 2.followers 3.following -->
                 <ul>
                     <li>
-                        <b>9</b> posts</li>
+                        <span  style="padding-right: 10px;"></span><b>9</b> posts</span></li>
                     <li>
                         <b>192</b> followers</li>
                     <li>
@@ -217,7 +86,7 @@
 
                 <ul>
                     <li>
-                        Indomie goreng enthusiast, goreng kok direbus? Rebus juga enak
+                        I was born in ice. Cold means nothing to me.
                     </li>
                 </ul>
             </div>
@@ -225,31 +94,31 @@
         </div>
         <div id="content">
             <div>
-                <img src="https://i.pinimg.com/originals/07/69/8a/07698a181cf4790054b2e0b3e59a1e79.jpg" class="picture" alt="">
+                <img src="https://pbs.twimg.com/media/DU6sfw4VMAAXE-3.jpg" class="picture" alt="">
             </div>
             <div>
-                <img src="https://i.pinimg.com/564x/db/d6/c4/dbd6c42a009f3c5df1326725dc784daa.jpg" class="picture" alt="">
+                <img src="https://pbs.twimg.com/media/CKhzsXNUEAAdLOk.jpg" class="picture" alt="">
             </div>
             <div>
-                <img src="https://i.pinimg.com/564x/85/dd/61/85dd6126f5e88bb2f40a27df4846cb0a.jpg" class="picture" alt="">
+                <img src="https://pbs.twimg.com/media/CZtxZJeWEAAFGpP.jpg" class="picture" alt="">
             </div>
             <div>
-                <img src="https://i.pinimg.com/564x/85/fc/7f/85fc7fde9b7907b5ddbc1eddb1208f07.jpg" class="picture" alt="">
+                <img src="https://pbs.twimg.com/card_img/994255175136133120/N7x--IGn?format=jpg&name=600x314" class="picture" alt="">
             </div>
             <div>
-                <img src="https://i.pinimg.com/564x/86/56/eb/8656eb642d224aaa1be28fcf4cf456b8.jpg" class="picture" alt="">
+                <img src="https://pbs.twimg.com/card_img/994255180794245120/jsKPrvKV?format=jpg&name=600x314" class="picture" alt="">
             </div>
             <div>
-                <img src="https://i.pinimg.com/564x/77/4f/46/774f4682ca29a2f5828a06d8781523e5.jpg" class="picture" alt="">
+                <img src="https://pbs.twimg.com/card_img/995569601508360192/ZEq7AN4z?format=jpg&name=600x314" class="picture" alt="">
             </div>
             <div>
-                <img src="" class="picture" alt="">
+                <img src="https://pbs.twimg.com/card_img/993609781704314882/ruoKzKoT?format=jpg&name=600x314" class="picture" alt="">
             </div>
             <div>
-                <img src="" class="picture" alt="">
+                <img src="https://pbs.twimg.com/card_img/994814995702611972/qlZak7sR?format=jpg&name=600x314" class="picture" alt="">
             </div>
             <div>
-                <img src="" class="picture" alt="">
+                <img src="https://pbs.twimg.com/card_img/994814996143108096/nq3WPl-A?format=jpg&name=600x314" class="picture" alt="">
             </div>
         </div>
 

@@ -1,0 +1,136 @@
+body {
+    font-family: 'Segoe UI';            /* font yang digunakan */
+    font-size: 26px;                    /* ukuran font */
+    color: black;                     /* warna font */
+    margin: 0;                          /* nol margin agar tidak ada gap antara body dan isinya */
+}
+
+
+main {
+    background-color: #fafafa;         /* background untuk content / main */
+    margin-top: 10px;
+    /* padding: 60px 290px 0px 290px; */
+}
+
+
+/* styling  agian header*/
+header {
+    background-color: #FFFFFF;
+    align-items: center;                 /* membuat posisi elemen di tengah  */
+    display: grid;                       /* display grid aja ga ada penjelasannya */
+    grid-template-columns: 1fr 1fr 1fr;  /* membuat border untuk batas header dan main  */
+    /* border-bottom: 1px solid #dbdbdb; */
+    max-width: 975px;                    /* membuat 3 line dengan 1 line + 1 line + 1 line */
+    width: 100%;                         /* membuat pembatas / limit widhth*/
+    margin: 0 auto;                      /* dengan margin 0 auto, posisi akan berada ditengah body */
+}
+
+/* tulisan instagram bagian kiri atas */
+.Instagram {
+    font-family: 'Grand Hotel';
+    font-size: 36px;
+}
+/* styling placeholder */
+::-webkit-input-placeholder{
+   text-align: center;
+   color: #8d8d8d;
+   font-weight: 100;
+}
+::-moz-placeholder{
+    text-align: center;
+    color: #8d8d8d;
+    font-weight: 100;   
+}
+
+/* styling search engine */
+.search {
+    border: solid 1px #dbdbdb;
+    background-color: #fafafa;
+    border-radius: 3px;
+    line-height: 26px;
+    width: 220px;
+}
+
+/* styling img pada class icon bagian kanan atas */
+ .icon img {
+    width: 40px;
+    align-items: center
+}
+
+.profile {
+    padding: 60px;
+    padding-bottom: 0px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-auto-rows: minmax(200px, 200px);
+    max-width: 975px;
+    margin: 0 auto;
+}
+
+.fotoProfile {
+    border-radius: 50%;
+    width: 152px;
+    height: 152px;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.profile ul{
+    padding-left: 10px;
+}
+
+.userName {
+    font-size: 32px;
+    font-weight: 200;
+}
+
+.fontButton{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+button {
+    background: 0;
+    border: 1px solid #dbdbdd;
+    border-radius: 3px;
+    line-height: 30px;
+    color: #262626;
+    /* display: inline-block; */
+    padding: 0px 24px;
+}
+
+.picture {
+    width: 293px;
+    height: 293px;
+    object-fit: cover;
+
+}
+
+#content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(293px, 293px);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    max-width: 975px;
+    margin: 0 auto;
+
+}
+
+
+
+
+ul {
+    list-style: none;
+    padding: 0;
+    /*untuk menghilangkan jarak tab list*/
+    margin: 0;
+    /*untuk menghilangkan jarak tab list*/
+}
+
+li {
+    display: inline; 
+    margin-right: 25px;
+    font-size: 16px;
+
+}
